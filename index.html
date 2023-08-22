@@ -58,6 +58,18 @@
     <div class="carousel-item">
       <img src="OnOn6.jpg" style="object-position: 0 -180px;" class="center-block" alt="...">
     </div>
+    <div class="carousel-item">
+      <img src="OnOn7.jpg" style="object-position: 0 -127px;" class="center-block" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="OnOn8.jpg" style="object-position: 0 -80px;" class="center-block" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="OnOn9.jpg" style="object-position: 0 -140px;" class="center-block" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="OnOn10.jpg" class="center-block" alt="...">
+    </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
@@ -74,6 +86,10 @@
     <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
     <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="4" aria-label="Slide 5"></button>
     <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="7" aria-label="Slide 8"></button>
+    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="8" aria-label="Slide 9"></button>
+    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="9" aria-label="Slide 10"></button>
   </div>
 </div>
 </div>
@@ -82,7 +98,7 @@
   <h2>Profile</h2>
   <table class="profiletable">
     <tr>
-	  <td>Name :</td>
+	  <td width=50%>Name :</td>
 	  <td>Onon</td>
 	</tr>
 	<tr>
@@ -114,7 +130,7 @@
 
       <button class="collapsible">Who is Onon?</button>
 	  <div class="content" hidden="hidden">
-		<p>I am Onon, the goddess of dog, the leader of Onon Church, and the light of the world.</p>
+		<p>I am Onon, the goddess of dog, the hierarch of Onon Church, and the light of the world.</p>
 	  </div>
 	  
 	  <button class="collapsible">How to be a part of Onon Church?</button>
@@ -124,7 +140,7 @@
 
       <button class="collapsible">Where do I like to go?</button>
 	  <div class="content" hidden="hidden">
-		<p>KFC</p>
+		<p>McDonald's</p>
 	  </div>
 	  
       <button class="collapsible">What do I like to bite?</button>
@@ -139,20 +155,20 @@
 	  
       <button class="collapsible">How many siblings do I have?</button>
 	  <div class="content" hidden="hidden">
-		<p>4</p>
+		<p>4+</p>
 	  </div>
 	  
       <button class="collapsible">Do I bark at night?</button>
 	  <div class="content" hidden="hidden">
-		<p>Yes, big dogs are cute, as long as you know me, problem is not a problem.</p>
+		<p>Yes, big dogs are cute, as long as you know me, nothing is a problem.</p>
 	  </div>
 	  
-	   <button class="collapsible">What will I do if my hooman is angry at me?</button>
+	   <button class="collapsible">What do I do if my hooman is angry at me?</button>
 	  <div class="content" hidden="hidden">
-		<p>I do a upset expression and seek for forgiveness from my hooman. It works all the time.</p>
+		<p>I do a cute upset expression and seek for forgiveness from my hooman. It works all the time.</p>
 	  </div>
 	  
-	   <button class="collapsible">What will I do if my hooman kick me off from the house?</button>
+	   <button class="collapsible">What do I do if I am kicked out from the house?</button>
 	  <div class="content" hidden="hidden">
 		<p>I run and play in the corridor.</p>
 	  </div>
@@ -168,7 +184,7 @@ var i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+    this.classList.toggle("activefaq");
     var content = this.nextElementSibling;
     let hidden = content.getAttribute("hidden");
 if (hidden) {

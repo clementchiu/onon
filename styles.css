@@ -154,7 +154,7 @@ body {
   margin-left: 5px;
 }
 
-.active:after {
+.activefaq:after {
   content: "\2212";
 }
 
@@ -170,7 +170,7 @@ body {
   margin-bottom: 6px;
   padding-top: 2px;
   padding-bottom: 2px;
-  padding-left: 20px;
+  padding-left: 10px;
   background-color: #D6ECF3;
 }
 
