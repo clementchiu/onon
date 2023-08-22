@@ -15,9 +15,9 @@ body {
 
 .ontitle {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
+//  margin-left: auto;
+//  margin-right: auto;
+//  width: 75%;
   text-align: center;
 }
 
@@ -49,7 +49,8 @@ body {
 
 .poem p {
   font-family: 'Montserrat', sans-serif;
-  color: lightgoldenrodyellow;
+//  color: lightgoldenrodyellow;
+  color: white;
   font-weight: normal;
   font-size: 18px;
   margin-top: 4px;
@@ -81,7 +82,9 @@ body {
   color: #DB114B;
   margin-top: 80px;
   margin-bottom: 40px;
-  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
   text-align: left;
 
 }
@@ -97,12 +100,30 @@ body {
   font-size: 18px;
 }
 
-.faq {
-  background-color: darkseagreen;
+.profiletable {
+  width: 100%;
+  font-size: 18px;
+  color: #DB114B;
+  
+}
+
+.profiletable tr {
+  height: 30px;
+}
+
+.faqblock {
+//  background-color: darkseagreen;
+  background-color: lightblue;
   padding-top: 40px;
   padding-bottom: 40px;
-  color: #004000;
+  color: #003779;
+  width: 100%;
+}
 
+.faq {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
 .faq h2{
@@ -110,3 +131,55 @@ body {
   font-size: 50px;
 }
 
+.collapsible {
+  cursor: pointer;
+  padding: 4px 0;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  background-color: lightblue;
+  color: #003779;
+}
+
+/* .collapsible:hover {
+  background-color: #C4DFDF;
+} */
+
+.collapsible:after {
+  content: '\002B';
+  color: #003779;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0;
+//  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.content > p {
+  margin-top: 0;
+  margin-bottom: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 20px;
+  background-color: #D6ECF3;
+}
+
+@media only screen and (max-width: 700px) {
+.profile {
+  width: 80%;
+}
+
+.faq {
+  width: 80%;
+}
+}
